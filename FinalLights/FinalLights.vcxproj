@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{29020fe3-a0bf-401d-87ee-cc25b3e91a2c}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>FinalLights</RootNamespace>
+    <ProjectName>FinalLights</ProjectName>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{D51BCBC9-82E9-4017-911E-C93873C4EA2B}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <LinuxIncludePath>c:\visualmicro\ignore</LinuxIncludePath>
+    <wiringPiIncludePath>c:\visualmicro\pi-ignore</wiringPiIncludePath>
+    <TargetOSAndVersion>Arduino</TargetOSAndVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\Programms\arduino-1.8.19\libraries\YannikLib\DataStore.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Programms\arduino-1.8.19\libraries\YannikLib\LightsMgr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Programms\arduino-1.8.19\libraries\YannikLib\Piece.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Programms\arduino-1.8.19\libraries\YannikLib\ProgramMgr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Programms\arduino-1.8.19\libraries\YannikLib\WifiMgr.cpp" />
+    <ClCompile Include="FinalLights.ino">
+      <FileType>CppCode</FileType>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\arduino folders read me.txt">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectCapability Include="VisualMicro" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\Programms\arduino-1.8.19\libraries\YannikLib\DataStore.h" />
+    <ClInclude Include="..\..\..\..\..\..\Programms\arduino-1.8.19\libraries\YannikLib\LightsMgr.h" />
+    <ClInclude Include="..\..\..\..\..\..\Programms\arduino-1.8.19\libraries\YannikLib\Piece.h" />
+    <ClInclude Include="..\..\..\..\..\..\Programms\arduino-1.8.19\libraries\YannikLib\ProgramMgr.h" />
+    <ClInclude Include="..\..\..\..\..\..\Programms\arduino-1.8.19\libraries\YannikLib\WifiMgr.h" />
+    <ClInclude Include="__vm\.FinalLights.vsarduino.h" />
+  </ItemGroup>
+  <PropertyGroup>
+    <DebuggerFlavor>VisualMicroDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <IncludePath>$(ProjectDir)..\FinalLights;C:\Users\maily\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\3.0.2\tools\sdk\include;C:\Users\maily\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\3.0.2\tools\sdk\lwip2\include;C:\Users\maily\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\3.0.2\cores\esp8266;C:\Users\maily\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\3.0.2\variants\generic;C:\Users\maily\OneDrive\Dokumente\Arduino\libraries\Adafruit_NeoPixel;C:\Users\maily\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\3.0.2\libraries\ESP8266WiFi\src;C:\Users\maily\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\3.0.2\libraries\ArduinoOTA;C:\Users\maily\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\3.0.2\libraries\ESP8266mDNS\src;$(ProjectDir)..\..\..\..\..\..\Programms\arduino-1.8.19\libraries\YannikLib;c:\users\maily\appdata\local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\3.0.4-gcc10.3-1757bed\xtensa-lx106-elf\include\c++\10.3.0;c:\users\maily\appdata\local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\3.0.4-gcc10.3-1757bed\xtensa-lx106-elf\include\c++\10.3.0\xtensa-lx106-elf;c:\users\maily\appdata\local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\3.0.4-gcc10.3-1757bed\xtensa-lx106-elf\include\c++\10.3.0\backward;c:\users\maily\appdata\local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\3.0.4-gcc10.3-1757bed\lib\gcc\xtensa-lx106-elf\10.3.0\include;c:\users\maily\appdata\local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\3.0.4-gcc10.3-1757bed\lib\gcc\xtensa-lx106-elf\10.3.0\include-fixed;c:\users\maily\appdata\local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\3.0.4-gcc10.3-1757bed\xtensa-lx106-elf\include</IncludePath>
+    <RemoteCCompileToolExe>C:\Users\maily\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\3.0.4-gcc10.3-1757bed\bin\xtensa-lx106-elf-g++</RemoteCCompileToolExe>
+    <RemoteCppCompileToolExe>C:\Users\maily\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\3.0.4-gcc10.3-1757bed\bin\xtensa-lx106-elf-g++</RemoteCppCompileToolExe>
+    <ValidateArchitecture>false</ValidateArchitecture>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\FinalLights;C:\Users\maily\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\3.0.2\tools\sdk\include;C:\Users\maily\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\3.0.2\tools\sdk\lwip2\include;C:\Users\maily\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\3.0.2\cores\esp8266;C:\Users\maily\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\3.0.2\variants\generic;C:\Users\maily\OneDrive\Dokumente\Arduino\libraries\Adafruit_NeoPixel;C:\Users\maily\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\3.0.2\libraries\ESP8266WiFi\src;C:\Users\maily\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\3.0.2\libraries\ArduinoOTA;C:\Users\maily\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\3.0.2\libraries\ESP8266mDNS\src;$(ProjectDir)..\..\..\..\..\..\Programms\arduino-1.8.19\libraries\YannikLib;c:\users\maily\appdata\local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\3.0.4-gcc10.3-1757bed\xtensa-lx106-elf\include\c++\10.3.0;c:\users\maily\appdata\local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\3.0.4-gcc10.3-1757bed\xtensa-lx106-elf\include\c++\10.3.0\xtensa-lx106-elf;c:\users\maily\appdata\local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\3.0.4-gcc10.3-1757bed\xtensa-lx106-elf\include\c++\10.3.0\backward;c:\users\maily\appdata\local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\3.0.4-gcc10.3-1757bed\lib\gcc\xtensa-lx106-elf\10.3.0\include;c:\users\maily\appdata\local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\3.0.4-gcc10.3-1757bed\lib\gcc\xtensa-lx106-elf\10.3.0\include-fixed;c:\users\maily\appdata\local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\3.0.4-gcc10.3-1757bed\xtensa-lx106-elf\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <GccToolChain>C:\Users\maily\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\3.0.4-gcc10.3-1757bed\bin\xtensa-lx106-elf-g++</GccToolChain>
+      <CppLanguageStandard>c++17</CppLanguageStandard>
+      <CLanguageStandard>gnu11</CLanguageStandard>
+      <CAdditionalWarning />
+      <CppAdditionalWarning />
+      <ForcedIncludeFiles>c:\program files\microsoft visual studio\2022\community\common7\ide\extensions\tikuv5i4.2f2\Micro Platforms\default\vm-intelli-pre.h;C:\Users\maily\AppData\Local\Temp\VMBuilds\FinalLights\esp8266_generic\Debug\.vmintelli\892b081c12e4d9e89d8f17461a8b6e21\vm-intelli-gcc-defines.h;c:\program files\microsoft visual studio\2022\community\common7\ide\extensions\tikuv5i4.2f2\Micro Platforms\default\vm-intelli-post.h;$(ProjectDir)__vm\.FinalLights.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <UndefineAllPreprocessorDefinitions>true</UndefineAllPreprocessorDefinitions>
+      <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>_VMICRO_INTELLISENSE;__ESP8266_esp8266__;__ESP8266_ESP8266__;_VMDEBUG=1;__ets__;ICACHE_FLASH;_GNU_SOURCE;MMU_IRAM_SIZE=0x8000;MMU_ICACHE_SIZE=0x8000;NONOSDK22x_190703=1;F_CPU=80000000L;LWIP_OPEN_SRC;TCP_MSS=536;LWIP_FEATURES=1;LWIP_IPV6=0;ARDUINO=108019;ARDUINO_ESP8266_GENERIC;ARDUINO_ARCH_ESP8266;ARDUINO_BOARD=ESP8266_GENERIC;LED_BUILTIN=2;FLASHMODE_DOUT;ESP8266;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties arduino.upload.port="COM8" config.Debug.customdebug_esp8266_generic_debugger_type="universal" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
